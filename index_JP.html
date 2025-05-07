@@ -26,4 +26,125 @@
   <a href="#kontakt">連絡</a>
 </nav>
 
+<main>
+
+  <div data-aos="fade-up" data-aos-once="true">
+  <section id="home">
+    //tu będzie obraz 
+    <h2>「lisie_twarze.pl」へようこそ！ (˶ˆᗜˆ˵)</h2>
+    <p>それは、漫画とその創作活動に完全に特化した個人サイトです。</p>
+  </section>
+  </div>
+  
+    <div data-aos="fade-up" data-aos-once="true">
+  <section id="galeria">
+     <h2>ポートフォリオ</h2>
+
+      <h3>人体構造</h3>
+      <div class="gallery">
+        <a href="images/anatomia1.jpg" data-lightbox="anatomia" data-title="Anatomia 1">
+          <img src="images/anatomia1.jpg" alt="Anatomia 1">
+        </a>
+        <a href="images/anatomia2.jpg" data-lightbox="anatomia" data-title="Anatomia 2">
+          <img src="images/anatomia2.jpg" alt="Anatomia 2">
+        </a>
+      </div>
+      <h3>コンセプトアート</h3>
+      <div class="gallery">
+        <a href="images/concept1.jpg" data-lightbox="concept" data-title="Concept 1">
+          <img src="images/concept1.jpg" alt="Concept Art 1">
+        </a>
+        <a href="images/concept2.jpg" data-lightbox="concept" data-title="Concept 2">
+          <img src="images/concept2.jpg" alt="Concept Art 2">
+        </a>
+      </div>
+
+      <h3>イラスト</h3>
+      <div class="gallery">
+        <a href="images/ilustracja1.jpg" data-lightbox="ilustracje" data-title="Ilustracja 1">
+          <img src="images/ilustracja1.jpg" alt="Ilustracja 1">
+        </a>
+        <a href="images/ilustracja2.jpg" data-lightbox="ilustracje" data-title="Ilustracja 2">
+          <img src="images/ilustracja2.jpg" alt="Ilustracja 2">
+        </a>
+      </div>
+
+      <h3>漫画</h3>
+      <div class="gallery">
+        <a href="images/manga1.jpg" data-lightbox="manga" data-title="Manga 1">
+          <img src="images/manga1.jpg" alt="Manga 1">
+        </a>
+        <a href="images/manga2.jpg" data-lightbox="manga" data-title="Manga 2">
+          <img src="images/manga2.jpg" alt="Manga 2">
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <div data-aos="fade-up" data-aos-once="true">
+  <section id="manga">
+    <h2>漫画</h2>
+    <p>私の漫画をダウンロードして読んでくださいよ！ :)))</p>
+    <a href="pliki/manga-przykladowa.pdf" download class="download-btn">ダウンロード</a>
+   </div>
+    </section>
+    
+  <div data-aos="fade-up" data-aos-once="true">
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>lisie_twarze@gmail.com</p>
+    <form>...</form>
+  </section>
+  </div>
+    </main>
+
+ <footer>
+    <p>&copy; 2025 lisie_twarze
+    </p>
+    <p> 卒業研究のために作成されたウエブサイトです
+    </p>
+    <p>Adam Dźwigała WSBメリトのワルシャワ
+    </p>
+    <p>オーリライツリザーブド
+    </p>
+    <div class="socials">
+      <a href="https://www.instagram.com" target="_blank">インスタgラム</a>
+      <a href="https://www.facebook.com" target="_blank">フェイスブック</a>
+      <a href="https://www.line.com" target="_blank">ライン</a>
+      <a href="https://www.artstation.com" target="_blank">アートステーション</a>
+    </div>
+  </footer>
+  
+  <script>
+  window.onload = function() {
+    window.scrollTo(0, 0);
+};
+  </script
+  
+  <!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  
+<div id="left-margin"></div>
+<div id="right-margin"></div>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+  const languageBar = document.querySelector('.language-bar');
+  const nav = document.querySelector('nav');
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) {
+      nav.classList.add('fixed');
+      languageBar.style.top = '-40px'; // Ukrywamy pasek językowy, gdy przewijamy
+    } else {
+      nav.classList.remove('fixed');
+      languageBar.style.top = '0'; // Przywracamy pasek językowy na górę
+    }
+  });
+</script>
+
 </body>
+</html>
